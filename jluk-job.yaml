@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+    - name: test
+      debug:
+        msg: This is a test
+    - name: test
+      command: sleep 300
