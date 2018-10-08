@@ -3,3 +3,9 @@
     check:
       jobs:
         - noop
+        - lukjob
+
+- job:
+    name: lukjob
+    parent: base
+    run: lukjob.yaml
