@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+    - command: date
+    - command: ls -alR /home/centos/src
+

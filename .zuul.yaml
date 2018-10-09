@@ -3,3 +3,14 @@
     check:
       jobs:
         - noop
+        - echo
+
+- job:
+    name: timeout
+    run: timeout.yaml
+
+- job:
+    name: echo
+    required-projects:
+      - jluk-codi-org/anotherproject
+    run: echo.yaml
