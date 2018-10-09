@@ -5,3 +5,5 @@
         msg: You should see me in the logs.
     - name: Another test task
       command: date
+    - name: List projects
+      shell: ls src/*/*
