@@ -1,0 +1,13 @@
+- hosts: all
+  tasks:
+    - name: This is a test task
+      debug:
+        msg: You should see me in the logs.
+    - name: Another test task
+      command: date
+    - name: List projects
+      shell: ls src/*/*
+    - name: Check JSON syntax in anotherproject
+      shell: python -m json.tool *.json
+      args:
+        chdir: src/github.com/jluk-codi-org/anotherproject
