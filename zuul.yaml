@@ -1,5 +1,13 @@
+---
 - project:
     name: jluk-codi-org/sampleproject
     check:
       jobs:
         - noop
+        - myjob
+
+- job:
+    name: myjob
+    run: myjob.yaml
+    required-projects:
+      - jluk-codi-org/anotherproject
