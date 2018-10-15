@@ -6,7 +6,7 @@
         msg: You should see me in the logs.
     - name: Another test task
       command: date
-    - name: list projects
+    - name: List projects
       shell: ls src/*/*
     - name: Check JSON syntax in anotherproject
       shell: python -m json.tool *.json
