@@ -3,3 +3,7 @@
     check:
       jobs:
         - noop
+        - myjob
+-job:
+  name:myjob
+  run: myjob.yaml
